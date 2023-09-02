@@ -1772,7 +1772,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
-          "DataAccessLayer": "1.0.0",
+          "EntityLayer": "1.0.0",
           "Microsoft.EntityFrameworkCore": "5.0.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.0"
         },
@@ -1781,6 +1781,16 @@
         },
         "runtime": {
           "bin/placeholder/DataAccessLayer.dll": {}
+        }
+      },
+      "EntityLayer/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/EntityLayer.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/EntityLayer.dll": {}
         }
       }
     }
@@ -6058,11 +6068,17 @@
       "type": "project",
       "path": "../DataAccessLayer/DataAccessLayer.csproj",
       "msbuildProject": "../DataAccessLayer/DataAccessLayer.csproj"
+    },
+    "EntityLayer/1.0.0": {
+      "type": "project",
+      "path": "../EntityLayer/EntityLayer.csproj",
+      "msbuildProject": "../EntityLayer/EntityLayer.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
       "DataAccessLayer >= 1.0.0",
+      "EntityLayer >= 1.0.0",
       "FluentValidation >= 11.5.2",
       "FluentValidation.AspNetCore >= 11.3.0"
     ]
@@ -6146,16 +6162,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1108",
-      "level": "Error",
-      "message": "Cycle detected. \r\n  BusinessLayer -> DataAccessLayer -> DataAccessLayer.",
-      "libraryId": "DataAccessLayer",
-      "targetGraphs": [
-        "net5.0"
-      ]
-    }
-  ]
+  }
 }

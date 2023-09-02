@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "dgSpecHash": "vJjrSCjgGn7AApLs6QCwZFT9eNDLBVfhRd1G8aLgQS5hvqhBNAJQWqIpyTnBl8cOrYezPChgWCQQl84Wi6Zwmg==",
-  "success": false,
+  "dgSpecHash": "620ryXADi3++lMuRuIknT1PoL9B0te49gR2mUhuHcfae7jjuLREwruzwuSMkcOigjQVyePcbWyQ9I6/hNToxiA==",
+  "success": true,
   "projectFilePath": "C:\\Users\\user\\source\\repos\\Core_Demo\\Core_Demo\\Core_Demo.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\user\\.nuget\\packages\\fluentvalidation\\11.5.2\\fluentvalidation.11.5.2.nupkg.sha512",
@@ -135,15 +135,5 @@
     "C:\\Users\\user\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1108",
-      "level": "Error",
-      "message": "Cycle detected. \r\n  Core_Demo -> DataAccessLayer -> DataAccessLayer.",
-      "libraryId": "DataAccessLayer",
-      "targetGraphs": [
-        "net5.0"
-      ]
-    }
-  ]
+  "logs": []
 }
