@@ -50,6 +50,16 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
+          "dependencies": {
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[11.5.2, )"
+            },
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[11.3.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -120,6 +130,18 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[11.5.2, )"
+            },
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[11.3.0, )"
+            },
+            "Microsoft.AspNetCore.Authorization": {
+              "target": "Package",
+              "version": "[7.0.8, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[5.0.0, )"
@@ -139,6 +161,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[5.0.0, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[5.0.2, )"
             }
           },
           "imports": [
@@ -253,10 +279,10 @@
       "version": "1.0.0",
       "restore": {
         "projectUniqueName": "C:\\Users\\user\\source\\repos\\Core_Demo\\EntityLayer\\EntityLayer.csproj",
-        "projectName": "EntityLayer",
+        "projectName": "DataAccessLayer",
         "projectPath": "C:\\Users\\user\\source\\repos\\Core_Demo\\EntityLayer\\EntityLayer.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\source\\repos\\Core_Demo\\EntityLayer\\obj\\",
+        "outputPath": "C:\\Users\\user\\source\\repos\\Core_Demo\\DataAccessLayer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -276,7 +302,11 @@
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\user\\source\\repos\\Core_Demo\\EntityLayer\\EntityLayer.csproj": {
+                "projectPath": "C:\\Users\\user\\source\\repos\\Core_Demo\\EntityLayer\\EntityLayer.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

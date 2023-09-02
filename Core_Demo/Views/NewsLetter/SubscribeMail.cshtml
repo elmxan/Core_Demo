@@ -1,0 +1,19 @@
+﻿<div class="tech-btm">
+   
+    <script src="~/lib/jquery/dist/jquery.js"></script>
+   
+							<p>Bloglarimizi mail ile alin </p>
+							<form   method="post" >
+
+		                        <input type="email" placeholder="Email" required="" name="Mail">
+								<input  id="ajax" type="submit" value="Subscribe" >
+								
+
+							</form>
+											<script>
+									$("#ajax").click(()=>{
+				$.post("https://localhost:44302/newsletter/subscribemail",Mail:<input type="email" placeholder="Email" required="" name="Mail">);
+									});
+
+	</script>
+						</div>

@@ -1,0 +1,36 @@
+﻿<h1>Partial</h1>
+
+<div class="comment-top">
+	<h4>Yorum yapin</h4>
+	<div class="comment-bottom">
+		<form    method="post">
+			<input class="form-control" type="text" name="CommentUsername" placeholder="Adiniz Soyadiniz" required="">
+			<input class="form-control" type="text" name="CommentTitle" placeholder="Konu" required="">
+
+			<textarea class="form-control" name="CommentContent" placeholder="Yorumunuz..." required=""></textarea>
+			<button type="submit" id=" cm"class="btn btn-primary submit">Yorum yap</button>
+		</form>
+	</div>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function {
+        $('.cm').click(function (e) {
+            e.preventDefault(); // Prevent form submission
+
+            var form = $(this);
+            var url = form.attr('PartialAddComment');
+            var formData = form.serialize();
+
+            $.ajax({
+                type: 'POST',
+                url: url,
+                data: formData,
+                success: function (result) {
+                   $('.comment-list').append(result);
+                   form[0].reset();
+                }
+            });
+        });
+    });
+</script>
